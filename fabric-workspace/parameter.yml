@@ -1,0 +1,9 @@
+find_replace:
+    - find_value: "3b7d2652-0466-4156-a849-1e32ec57d563" # Lakehouse GUID
+      replace_value:
+          TEST: "$items.Lakehouse.LH_ISKADemo.id" # TEST LH_ISKADemo Lakehouse GUID
+          PROD: "$items.Lakehouse.LH_ISKADemo.id" # PROD LH_ISKADemo Lakehouse GUID
+    - find_value: "4052e5a9-8a36-4838-9592-922c5e2a7dd1" # Workspace ID
+      replace_value:
+          TEST: "$workspace.id" # TEST workspace ID
+          PROD: "$workspace.id" # PROD workspace ID

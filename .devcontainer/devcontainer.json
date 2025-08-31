@@ -6,7 +6,10 @@
   "workspaceFolder": "/workspaces/fabric-iska2025/",
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": [],
+      "settings": {
+        "python.defaultInterpreterPath": "/workspaces/fabric-iska2025/.venv/bin/python"
+      }
     }
   }
 }
