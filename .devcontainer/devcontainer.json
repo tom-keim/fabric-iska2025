@@ -1,0 +1,12 @@
+{
+  "name": "ISKA Fabric 2025",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "workspaceFolder": "/workspaces/fabric-iska2025/",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
