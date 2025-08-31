@@ -26,16 +26,20 @@
 
 # CELL ********************
 
-import pkgutil
-import importlib
+from iska_python_project.greeters.hello_word import HelloWorld
 
-def list_subpackages(package_name):
-    package = importlib.import_module(package_name)
-    print("Package path:", package.__path__)  # Debug print
-    return [name for _, name, is_pkg in pkgutil.iter_modules(package.__path__) if is_pkg]
 
-# Use the correct package name based on your structure:
-print(list_subpackages("iska_python_project.iska_python_project"))
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+greeter = HelloWorld()
+greeter.greet()
 
 # METADATA ********************
 
