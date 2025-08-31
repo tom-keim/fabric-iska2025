@@ -44,7 +44,15 @@
 import sempy.fabric as fabric
 
 def get_connected_lakehouse_workspace() -> str:
-    match fabric.get_notebook_workspace_id():
+    df = fabric.list_items()
+    # first Lakehouse row (case-insensitive), then get its Workspace Id
+    lakehouses = df[df['Type'].str.strip().str.lower() == 'lakehouse']
+    if lakehouses.empty:
+        raise ValueError("No Lakehouse items found.")
+
+    workspace_id = lakehouses.iloc[0]['Workspace Id']
+    print(workspace_id)
+    match workspace_id:
         case '4052e5a9-8a36-4838-9592-922c5e2a7dd1':
             return "DEV"
         case 'e10ae2d3-b7c3-43ad-8cc2-4680c4b17e27':
