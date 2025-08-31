@@ -6,4 +6,4 @@ find_replace:
     - find_value: "4052e5a9-8a36-4838-9592-922c5e2a7dd1" # Workspace ID
       replace_value:
           TEST: "$workspace.id" # TEST workspace ID
-          PROD: "$workspace.id" # PROD workspace ID
+          PROD: "$workspace.id" # PROD workspace IDc
