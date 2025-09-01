@@ -8,7 +8,7 @@
     "vscode": {
       "extensions": [],
       "settings": {
-        "python.defaultInterpreterPath": "/workspaces/fabric-iska2025/.venv/bin/python"
+        "python.defaultInterpreterPath": "/workspaces/fabric-iska2025/iska_python_project/.venv/bin/python"
       }
     }
   }

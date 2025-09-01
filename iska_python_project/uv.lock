@@ -255,7 +255,7 @@ wheels = [
 
 [[package]]
 name = "iska-python-project"
-version = "0.2.6"
+version = "0.2.8"
 source = { virtual = "." }
 
 [package.optional-dependencies]
